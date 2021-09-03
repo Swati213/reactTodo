@@ -123,11 +123,14 @@ export const FormData = () => {
 
             return (
               <>
-                <div key={elem.id}>
-                  <table className="showdata">
-                    <tr>
-                      <div>
-                        <th scope="col"> {index + 1} </th>
+                <div key={elem.id} className="showdata">
+                
+                  <table >
+                    
+                      <tr>
+                        <th > {index + 1} </th>
+                        
+                        
                         <td>{title}</td>
                         <td>{desc}</td>
                         <td>
@@ -138,8 +141,9 @@ export const FormData = () => {
                             <DeleteIcon />
                           </button>
                         </td>
-                      </div>
-                    </tr>
+                        </tr>
+                      
+                    
                   </table>
                 </div>
               </>
